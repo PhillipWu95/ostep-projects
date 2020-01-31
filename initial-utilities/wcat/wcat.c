@@ -24,6 +24,7 @@ int main(int argc, char *argv[]) {
             printf(buffer);
         }
         free(filePath);
+        fclose(fp);
     }
 
     return 0;
