@@ -4,7 +4,7 @@
 
 int main(int argc, char *argv[]) {
     const int BUFFER_SIZE = 16;
-    if(argc == 0) return 0;
+    if(argc == 0 || argc == 1) return 0;
 
     for(int fileNo = 1; fileNo < argc; fileNo++) {
         // Deal with each file
