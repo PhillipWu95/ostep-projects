@@ -10,6 +10,8 @@ int main(int argc, char *argv[]) {
         // Deal with each file
         // char filePath[3+strlen(argv[fileNo])] = "./";
         char *filePath = (char *) malloc((3 + strlen(argv[fileNo]))*sizeof(char));
+        filePath[0] = '\0';
+        filePath = strcat(filePath, "./");
         filePath = strcat(filePath, argv[fileNo]);
         FILE* fp = fopen(filePath, "r");
 
